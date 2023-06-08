@@ -6,7 +6,7 @@ VERILOG_SOURCES += $(PWD)/wrappers/xor_test.v
 all: xor dut
 TOPLEVEL = dut
 MODULE = dut_test
-xor:
+xor:   
        rm -rf sim_build
        $(MAKE) sim MODULE=xor_test TOPLEVEL=xor_gate
 include $(shell cocotb-config --makefiles)/Makefile.sim
