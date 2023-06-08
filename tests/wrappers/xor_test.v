@@ -6,7 +6,7 @@ module xor_test(
 xor_gate xor_gate(
     .a(a),
     .b(b),
-    .y(y),
+    .y(y)
 );
   initial begin
     $dumpfile("xor.vcd");
