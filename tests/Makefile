@@ -7,6 +7,6 @@ all: xor dut
 TOPLEVEL = dut
 MODULE = dut_test
 xor:
-        rm -rf sim_build
-        $(MAKE) sim MODULE=xor_test TOPLEVEL=xor_gate
+       rm -rf sim_build
+       $(MAKE) sim MODULE=xor_test TOPLEVEL=xor_gate
 include $(shell cocotb-config --makefiles)/Makefile.sim
