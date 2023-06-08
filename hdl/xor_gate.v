@@ -1,3 +1,7 @@
-module xor_gate(input a,b output y);
-  assign y=a^b;
+module xor_gate(
+  input wire a,
+  input wire b,
+  output wire y
+);
+assign y=a^b;
 endmodule
